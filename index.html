@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Weather API</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="getStart">Getting started</li>
+          <li>Docs</li>
+          <li>API Reference</li>
+          <li>Support</li>
+          <li>Sign in</li>
+          <li>Sign up</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="getting-started">
+        <div class="container">
+          <h1>Getting Started</h1>
+          <p>
+            Welcome to the WeatherAPI documentation. To begin using our API,
+            you'll need to sign up on our website to get your API key.
+          </p>
+          <p>Follow these steps:</p>
+          <ol>
+            <li>
+              Create an account on
+              <a href="https://www.weatherapi.com/" target="_blank"
+                >WeatherAPI</a
+              >.
+            </li>
+            <li>Go to your account settings and generate an API key.</li>
+            <li>
+              Once you have your API key, you're ready to start making requests
+              to our API.
+            </li>
+          </ol>
+          <p>
+            For detailed instructions, refer to our
+            <a href="#authentication">Authentication</a> section.
+          </p>
+        </div>
+      </section>
+
+      <section id="authentication">
+        <div class="container">
+          <h1>Authentication</h1>
+          <p>
+            To make requests to the WeatherAPI, you need to include your API key
+            in the query parameters of your HTTP request.
+          </p>
+          <p>Example:</p>
+          <pre><code>
+          GET /v1/current.json?key=YOUR_API_KEY&q=London HTTP/1.1
+          Host: api.weatherapi.com
+              </code></pre>
+          <p>
+            Replace <code>YOUR_API_KEY</code> with your actual API key obtained
+            from your WeatherAPI account.
+          </p>
+        </div>
+      </section>
+
+      <section id="endpoints">
+        <div class="container">
+          <h1>Endpoints</h1>
+          <p>
+            WeatherAPI provides various endpoints to access different types of
+            weather data.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li>
+              <strong>Current Weather:</strong> <code>/v1/current.json</code>
+            </li>
+            <li>
+              <strong>Forecast Weather:</strong> <code>/v1/forecast.json</code>
+            </li>
+          </ul>
+          <p>
+            Refer to our <a href="#documentation-link">API Documentation</a> for
+            detailed information on each endpoint.
+          </p>
+        </div>
+      </section>
+
+      <section id="examples">
+        <div class="container">
+          <h1>Examples</h1>
+          <p>
+            Here are some examples demonstrating how to use WeatherAPI's
+            endpoints:
+          </p>
+          <div class="example">
+            <h3>Example 1: Getting Current Weather</h3>
+            <pre><code>
+GET /v1/current.json?key=YOUR_API_KEY&q=London HTTP/1.1
+Host: api.weatherapi.com
+                    </code></pre>
+            <p>
+              Replace <code>YOUR_API_KEY</code> with your actual API key and
+              <code>London</code> with your desired location.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="container">
+          <h1>FAQ</h1>
+          <h3>Q: How frequently is the weather data updated?</h3>
+          <p>A: Weather data is updated every hour.</p>
+          <h3>Q: Is the API free to use?</h3>
+          <p>
+            A: We offer both free and premium plans. Check our
+            <a href="#pricing-link">pricing</a> page for more details.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script defer src="/JS/script.js"></script>
+  </body>
+</html>
